@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #e0e5ec;
+  --shadow-color: #a3b1c6;
+  --highlight-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.neumorphic {
+  background: var(--bg-color);
+  box-shadow: 
+    8px 8px 16px var(--shadow-color),
+    -8px -8px 16px var(--highlight-color);
+}
+
+.neumorphic-inset {
+  background: var(--bg-color);
+  box-shadow: 
+    inset 8px 8px 16px var(--shadow-color),
+    inset -8px -8px 16px var(--highlight-color);
+}
+
+.neumorphic-button {
+  background: var(--bg-color);
+  box-shadow: 
+    5px 5px 10px var(--shadow-color),
+    -5px -5px 10px var(--highlight-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.neumorphic-button:hover {
+  box-shadow: 
+    4px 4px 8px var(--shadow-color),
+    -4px -4px 8px var(--highlight-color);
+}
+
+.neumorphic-button:active {
+  box-shadow: 
+    inset 5px 5px 10px var(--shadow-color),
+    inset -5px -5px 10px var(--highlight-color);
+}
